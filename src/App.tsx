@@ -1,17 +1,12 @@
 import Card from './components/Card/Card';
-import SearchIcon from './components/cicons/SearchIcon';
+import Search from './components/Search/Search';
 import style from './scss/App.module.scss';
 
 function App() {
 	return (
 		<div className={style.root}>
 			<div className={style.container}>
-				<form action='' className={style.form}>
-					<input type='text' className={style.input} />
-					<button type='submit' className={style.btnSearch}>
-						<SearchIcon />
-					</button>
-				</form>
+				<Search />
 				<Card />
 			</div>
 		</div>
