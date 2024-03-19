@@ -1,4 +1,4 @@
-import CloudyIcon from './components/cicons/CloudyIcon';
+import Card from './components/Card/Card';
 import SearchIcon from './components/cicons/SearchIcon';
 import style from './scss/App.module.scss';
 
@@ -12,18 +12,7 @@ function App() {
 						<SearchIcon />
 					</button>
 				</form>
-				<article className={style.card}>
-					<h1 className={style.city}>Barnaul</h1>
-					<span className={style.date}>Tuesday, March 19, 2024</span>
-					<div className={style.info}>
-						<div className={style.status}>
-							<CloudyIcon />
-						</div>
-						<div className={style.temp}>
-							<span>5 C°</span>
-						</div>
-					</div>
-				</article>
+				<Card />
 			</div>
 		</div>
 	);
