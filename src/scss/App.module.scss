@@ -1,0 +1,77 @@
+@import './libs/normalize';
+
+.root {
+	background-image: url('../assets/img/background.jpg');
+	height: 100vh;
+	padding: 20px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	.container {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 120px;
+
+		.form {
+			padding: 7px;
+			display: flex;
+			border-radius: 6px;
+			width: 25%;
+			backdrop-filter: blur(1px);
+			background-color: rgba(255, 255, 255, 0.216);
+
+			.input {
+				padding: 2px;
+				flex: 1 1 auto;
+				color: #e7e7e7;
+			}
+			.btnSearch {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		.card {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 10px;
+			width: 27%;
+			height: 500px;
+			border-radius: 6px;
+			backdrop-filter: blur(12px);
+			background-color: rgba(255, 255, 255, 0.216);
+
+			.city {
+				margin-top: 15px;
+				color: #fff;
+				font-weight: 500;
+				font-size: 30px;
+			}
+
+			.date {
+				margin: 20px 0;
+				color: #fff;
+				font-weight: 500;
+				font-size: 20px;
+			}
+
+			.info {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 20px;
+
+				.temp {
+					color: #fff;
+					font-weight: 500;
+					font-size: 50px;
+				}
+			}
+		}
+	}
+}
