@@ -29,10 +29,17 @@
 		align-items: center;
 		margin-top: 20px;
 
-		.temp {
+		.temp span {
 			color: #fff;
 			font-weight: 500;
-			font-size: 50px;
+			font-size: 75px;
+		}
+
+		.desc {
+			margin-top: 10px;
+			color: #fff;
+			font-weight: 500;
+			font-size: 25px;
 		}
 	}
 }
