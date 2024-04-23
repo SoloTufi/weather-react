@@ -1,21 +1,23 @@
 import React from 'react';
 
-import style from './card.module.scss';
+import { IProps } from './types';
 import { CloudyIcon, RainIcon, ShtormIcon, SnowfallIcon, SunnyIcon } from '../Cicons/StatusIcons';
 
-const Card: React.FC = () => {
+import style from './card.module.scss';
+
+const Card: React.FC<IProps> = ({ id, city, date, status, temp, desc }: IProps) => {
 	return (
 		<article className={style.card}>
-			<h1 className={style.city}>Barnaul</h1>
-			<span className={style.date}>Tuesday, March 19, 2024</span>
+			<h1 className={style.city}>{city}</h1>
+			<span className={style.date}>{date}</span>
 			<div className={style.info}>
 				<div className={style.status}>
 					<RainIcon />
 				</div>
 				<div className={style.temp}>
-					<span>5 C°</span>
+					<span>{temp} C°</span>
 				</div>
-				<span className={style.desc}>Cloudy, no precipitation</span>
+				<span className={style.desc}>{desc}</span>
 			</div>
 		</article>
 	);
